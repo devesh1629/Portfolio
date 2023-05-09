@@ -1,0 +1,91 @@
+.about__content {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+    color: var(--yellow-theme-main-color);
+
+
+    &__left {
+        width: 50%;
+
+        h3 {
+            font-size: 30px;
+            padding-top: 10px;
+        }
+
+        p {
+            padding-top: 20px;
+            font-size: 1.8rem;
+            line-height: 1.65;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed var(--yellow-theme-main-color);
+            //width: 80%;
+        }
+
+        li {
+            padding-top: 10px;
+            list-style: none;
+            letter-spacing: 0.5px;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+
+        &__inner {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            border-radius: 50%;
+            border: 1.5px solid var(--yellow-theme-main-color);
+            background: radial-gradient(150px, var(--yellow-theme-main-color), transparent 90%);
+            animation: rotation 10s linear 1s infinite;
+
+            div:nth-child(1) {
+                position: absolute;
+                top: -9%;
+                left: 41%;
+            }
+
+            div:nth-child(2) {
+                position: absolute;
+                right: -8%;
+                top: 41.5%;
+            }
+
+            div:nth-child(3) {
+                position: absolute;
+                bottom: -10%;
+                left: 41%;
+            }
+
+            div:nth-child(4) {
+                position: absolute;
+                left: -8%;
+                top: 41%;
+            }
+        }
+    }
+
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about__content {
+        flex-direction: column;
+        &__left, &__right {
+            width: 100%;
+        }
+    }
+}
