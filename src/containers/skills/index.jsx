@@ -19,9 +19,9 @@ const Skills = () => {
             <div key={i} className="skills__content-wrapper__inner">
               <Animate
                 play
-                duration={1}
-                delay={0.2}
-                start={{ transform: 'translateX(-350px)' }}
+                duration={0.5}
+                delay={0}
+                start={{ transform: 'translateX(-250px)' }}
                 end={{ transform: 'translateX(0px)' }}
               >
                 <h3 className="skills__content-wrapper__inner__category">{item.label}</h3>

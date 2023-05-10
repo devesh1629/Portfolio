@@ -4,7 +4,6 @@ import { loadFull } from "tsparticles";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from './containers/home';
-import Contact from './containers/contact';
 import About from './containers/about';
 import Portfolio from './containers/portfolio';
 import Skills from './containers/skills';
@@ -36,7 +35,6 @@ function App() {
       <div className="App__main-page-content">
         <Routes>
           <Route index path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/skills" element={<Skills />} />

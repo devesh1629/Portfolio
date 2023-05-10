@@ -30,7 +30,10 @@ const About = () => {
     }
   ];
 
-  const jobSummary = "Software Engineer with professional experience of working in MNC's like Amazon and Xiaomi";
+  const jobSummary = "I work as a Software Engineer at Xiaomi. I have also done a 6 months SDE Internship at Amazon. " + 
+                     "I have done full stack using React and JavaScript at front end and Java and Node at Backend. " + 
+                     "I am competitive programmer with good proficiency in Data Structures and Algorithms in both C++ and Java. " +
+                     "I have participated in various programming competitions and I have been to ACM ICPC regionals twice. ";
 
   return (
     <section id="about" className="about">
@@ -43,28 +46,27 @@ const About = () => {
         <div className="about__content__left">
           <Animate
             play
-            duration={1}
+            duration={0.5}
             delay={0}
             start={{ transform: 'translateX(-250px)' }}
             end={{ transform: 'translateX(0px)' }}
           >
             <h3>Full Stack Developer</h3>
-            <p>{jobSummary}</p>
+            <p style={{letterSpacing: "0.5px"}}>{jobSummary}</p>
           </Animate>
           <Animate
             play
-            duration={1}
+            duration={0.5}
             delay={0}
-            start={{ transform: 'translateX(500px)' }}
+            start={{ transform: 'translateX(250px)' }}
             end={{ transform: 'translateX(0px)' }}
           >
-            <h3>Personal Details</h3>
+            <h3 style={{paddingBottom: '15px'}}>Personal Details</h3>
             <ul>
               {
                 personalDetails.map((item, i) => (
                   <li key={i}>
-                    <span className="title">{item.label}: </span>
-                    <span className="value">{item.value}</span>
+                    <span className="title">{item.label}: {item.value}</span>
                   </li>
                 ))
               }

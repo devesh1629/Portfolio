@@ -24,10 +24,6 @@ const data = [
   {
     label: 'PORTFOLIO',
     to: '/portfolio'
-  },
-  {
-    label: 'CONTACT',
-    to: '/contact'
   }
 ]
 
