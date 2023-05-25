@@ -24,7 +24,7 @@ const portfolioData = [
   },
   {
     id: 2,
-    name: "Spring Boot Application",
+    name: "Spring Application",
     image: ImageThree,
     link: "https://github.com/devesh1629/Crud-Application-using-Spring-Boot",
   },
